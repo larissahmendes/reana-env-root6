@@ -60,3 +60,10 @@ ENV LD_LIBRARY_PATH=/usr/local/lib
 ENV LIBPATH=/usr/local/lib
 ENV PYTHONPATH=/usr/local/lib
 ENV SHLIB_PATH=/usr/local/lib
+
+#install python
+RUN sudo apt-get install python
+
+#install jupyter and dependencies
+RUN sudo pip install jupyter metakernel zmq
+
